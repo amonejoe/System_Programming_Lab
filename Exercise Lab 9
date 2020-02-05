@@ -15,3 +15,27 @@ printf("You have too many arguments. You suck.\n");
 }
 return 0;
 }
+
+//Make the loop count backward by using i-- to start at 25 and go to 0.
+#include <stdio.h>
+int main (void){
+int f;
+for (f=25;f>0; f--){
+printf("%d \n",f);}
+}
+
+// while loop 1
+#include <stdio.h>
+int main()
+{
+   int count=1;
+   while (count <= 4)
+   {
+	printf("%d ", count);
+	count++;
+   }
+   return 0;
+}
+
+// while loop 2
+
