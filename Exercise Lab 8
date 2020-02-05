@@ -1,35 +1,19 @@
-
-//Make the loop count backward by using i-- to start at 25 and go to 0.
 #include <stdio.h>
-int main (void){
-int f;
-for (f=25;f>0; f--){
-printf("%d \n",f);}
-}
-
-// Extra while loop 1
-#include <stdio.h>
-int main()
+int main(int argc, char *argv[])
 {
-   int count=1;
-   while (count <= 4)
-   {
-	printf("%d ", count);
-	count++;
-   }
-   return 0;
+int i = 0;
+if (argc == 1) {
+printf("You only have one argument. You suck.\n");
+} else if (argc > 1 && argc < 4) {
+printf("Here's your arguments:\n");
+for (i = 0; i < argc; i++) {
+printf("%s ", argv[i]);
+}
+printf("\n");
+} else {
+printf("You have too many arguments. You suck.\n");
+}
+return 0;
 }
 
-//Extra while loop 2
 
-#include <stdio.h>
-int main()
-{
-    int var =5;
-    while (var <=10)
-    {
-       printf("%d", var);
-       var--;
-    }
-    return 0;
-}
